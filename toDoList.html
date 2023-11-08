@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="toDoList.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>To Do List</h2>
+      <input type="text" id="tarefa" placeholder="New task..." onkeydown="addEnter(event)"/>
+      <span onclick="addElemento()" class="addBtn">Include</span>
+    </div>
+
+    <ul id="itemLista">
+      <li class="checked">Entregar atividade no moodle</li>
+    </ul>
+
+    <div class="clearBtn">
+      <span id="limparTudo" onclick="limparTudoBtn()">Clear all</span>
+    </div>
+
+    <footer>
+      <p>By Emanuele Flor da Rosa, 2023</p>
+    </footer>
+
+    <script src="toDoList.js"></script>
+  </body>
+</html>
